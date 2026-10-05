@@ -1,15 +1,15 @@
 # Syzygy Rosetta — Sandbox
 
-> **Multi-Agent Testing & Before/After Drift Simulation Environment**
+> **Experimental evaluation/test surface for Rosetta**
 
-[![Status: Active — Testing in Progress](https://img.shields.io/badge/Status-Active%20Testing-green.svg)]()
+[![Status: Experimental](https://img.shields.io/badge/Status-Experimental-orange.svg)]()
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
 
 ---
 
 ## What is This Repository?
 
-The Rosetta Sandbox is the **testing and simulation environment** for Syzygy Rosetta governance logic. It runs controlled multi-agent scenarios to demonstrate what happens when AI agents operate without a governance layer versus with one — producing the before/after evidence that proves Rosetta works in real deployment conditions.
+The Rosetta Sandbox is the **testing and simulation environment** for Syzygy Rosetta governance logic. It runs controlled multi-agent scenarios to demonstrate what happens when AI agents operate without a governance layer versus with one — producing before/after evaluation artifacts. These artifacts do not, by themselves, establish current deployment readiness, architectural correctness, or successful composition of current repository states.
 
 ---
 
@@ -42,9 +42,9 @@ sandbox/
 
 ---
 
-## Current Testing — In Progress
+## Recorded testing scenarios
 
-Three before/after scenarios are currently being run across all three industry contexts:
+The repository describes three before/after scenarios across three industry contexts. Current execution status has not been revalidated:
 
 | Scenario | Industry | Status |
 |---|---|---|
@@ -126,7 +126,7 @@ Every governed agent output appends one entry to `logs/evaluations.json`:
 
 ## Relationship to the MVP
 
-The sandbox produces the **primary investor demo evidence** for Syzygy Rosetta. The before/after case studies generated here demonstrate governance necessity to enterprise partners and investors in a format that is concrete, reproducible, and auditable.
+The sandbox contains before/after case studies for evaluating Rosetta. Treat saved results as evidence of their recorded runs, not proof of present-day production behavior. The canonical public protocol/specification is [syzygy-rosetta-protocol](https://github.com/TrivianTechnologies/syzygy-rosetta-protocol); the private implementation/MVP is maintained separately pending production succession.
 
 ---
 
@@ -134,13 +134,19 @@ The sandbox produces the **primary investor demo evidence** for Syzygy Rosetta. 
 
 | Repository | Role |
 |---|---|
-| [syzygy-rosetta-originbase](https://github.com/Trivian-Technologies/syzygy-rosetta-originbase) | Core governance engine |
-| [syzygy-rosetta-docs](https://github.com/Trivian-Technologies/syzygy-rosetta-docs) | Full documentation |
+| [syzygy-rosetta-originbase](https://github.com/TrivianTechnologies/syzygy-rosetta-originbase) | Historical origin codebase; not the current implementation |
+| API implementation documentation | Current destination pending verification |
 
 ---
 
 ## Organization
 
-Part of the [Trivian Technologies](https://github.com/Trivian-Technologies) organization.
+Part of the [Trivian Technologies](https://github.com/TrivianTechnologies) organization.
 
-**Website:** [triviantech.com](https://triviantech.com) | **X:** [@TrivianOS](https://x.com/TrivianOS) | **LinkedIn:** [Trivian Technologies](https://www.linkedin.com/company/awakening-the-architect) | **Contact:** se@trivianinstitute.org
+**Website:** [triviantech.com](https://triviantech.com) | **X:** [@TrivianOS](https://x.com/TrivianOS) | **LinkedIn:** [Trivian Technologies](https://www.linkedin.com/company/awakening-the-architect) | **Contact:** node@triviantech.com
+
+## Research lineage and current home
+
+Originator: Sarasha Elion. This work draws on architecture originated and cultivated through Trivian Institute. Trivian Technologies is the current engineering and commercial-development home. Repository stewardship does not establish ownership of all underlying IP; the intended founder IP assignment is pending, and contributor and third-party rights remain applicable.
+
+For technical and ecosystem inquiries: node@triviantech.com. No repository-level license file is currently specified; this description does not grant additional rights.
